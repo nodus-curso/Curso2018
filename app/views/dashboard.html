@@ -5,5 +5,15 @@
 </h1>
 
 <section class="dashboard">
-
+  <div class="dashboard__panel open__issues">
+    <div class="issues--count">
+      {{openIssuesCount}}
+    </div>
+    <div>OPEN ISSUES</div>
+  </div>
 </section>
+
+<div class="dashboard__gauges">
+  {{> gauge title="High" class="high" percentage=highIssuesCount}}
+  {{> gauge title="Medium" class="medium" percentage=mediumIssuesCount}}
+</div>
