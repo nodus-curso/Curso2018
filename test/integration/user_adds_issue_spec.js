@@ -22,7 +22,7 @@ describe('New issues', function() {
     cy.contains('Blue screen in Windows Vista')
       .click();
 
-    cy.contains('Estimation').should('exist');
+    cy.contains('Estimacion').should('exist');
     cy.contains('13').should('exist');
     // cy.contains('Severity').should('exist');
     // cy.contains('High').should('exist');
