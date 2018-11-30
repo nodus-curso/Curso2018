@@ -8,11 +8,13 @@ router.get('/', function(req, res) {
   const openIssuesCount = openIssues.length;
   const highIssuesCount = calculatePercentage(openIssues, "High");
   const mediumIssuesCount = calculatePercentage(openIssues, "Medium");
+  const lowIssuesCount = calculatePercentage(openIssues, "Low");
 
   res.render('dashboard', {
     openIssuesCount,
     highIssuesCount,
-    mediumIssuesCount
+    mediumIssuesCount,
+    lowIssuesCount
   });
 });
 
