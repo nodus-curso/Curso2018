@@ -3,6 +3,7 @@ describe('Dashboard', function() {
         cy.fixture({
             title: "Issue 1",
             status:"new"
+            
         });
         cy.fixture({
             title: "Issue 2",
@@ -12,7 +13,7 @@ describe('Dashboard', function() {
             title: "Issue 3",
             status:"close"
         });
-        cy.visit('/dashboad');
+        cy.visit('/dashboard');
         cy.contains('2').should('exist');
     });
 });
